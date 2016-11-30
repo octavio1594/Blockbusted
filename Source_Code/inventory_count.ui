@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>inventory_count</class>
+ <widget class="QDialog" name="inventory_count">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>806</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Inventory Count</string>
+  </property>
+  <widget class="QPushButton" name="exit">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>260</y>
+     <width>80</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="invCount_groupBox">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>30</y>
+     <width>488</width>
+     <height>222</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Inventory Count</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="6">
+     <widget class="QTableView" name="inventoryCount"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="id_label">
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="id_input"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="name_label">
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="name_input"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="quantity_label">
+      <property name="text">
+       <string>Quantity</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLineEdit" name="quantity_input"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="count_label">
+      <property name="text">
+       <string>Counted</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLineEdit" name="count_input"/>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="variance_label">
+      <property name="text">
+       <string>Variance</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="variance_input"/>
+    </item>
+    <item row="5" column="2">
+     <widget class="QPushButton" name="edit_invCount">
+      <property name="text">
+       <string>Edit</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>exit</sender>
+   <signal>clicked()</signal>
+   <receiver>inventory_count</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>562</x>
+     <y>424</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>449</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

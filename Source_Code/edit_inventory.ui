@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>edit_inventory</class>
+ <widget class="QDialog" name="edit_inventory">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>427</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Inventory</string>
+  </property>
+  <widget class="QGroupBox" name="product_groupBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>731</width>
+     <height>357</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Product</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="pid_label">
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QPushButton" name="add_product">
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3" rowspan="8">
+     <widget class="QTableView" name="inv_view"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="pquantity_label">
+      <property name="text">
+       <string>Quantity</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="prating_label">
+      <property name="text">
+       <string>Rating</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="pgenre_label">
+      <property name="text">
+       <string>Genre</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="pname_label">
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="pprice_label">
+      <property name="text">
+       <string>Price</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="2">
+     <widget class="QPushButton" name="edit_product">
+      <property name="text">
+       <string>Edit</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QPushButton" name="remove_product">
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QPushButton" name="InventoryCount">
+      <property name="text">
+       <string>Inventory Count</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <widget class="QPushButton" name="load_inv">
+      <property name="text">
+       <string>Load Inventory</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QPushButton" name="Exit">
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="2">
+     <widget class="QLineEdit" name="pquantity_input"/>
+    </item>
+    <item row="4" column="1" colspan="2">
+     <widget class="QLineEdit" name="pprice_input"/>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QLineEdit" name="prating_input"/>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QLineEdit" name="pgenre_input"/>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QLineEdit" name="pname_input"/>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QLineEdit" name="pid_input"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Exit</sender>
+   <signal>clicked()</signal>
+   <receiver>edit_inventory</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>371</x>
+     <y>385</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
