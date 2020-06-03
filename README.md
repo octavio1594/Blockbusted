@@ -1,5 +1,5 @@
 # Blockbusted
-Final project for CS 441, Software Engeneerng.
+Final project for CS 441, Software Engineerng.
 
 This project is the result of a colaboration between 5 people an myself. 
 The project is an application, in a very early state, that helps with 
